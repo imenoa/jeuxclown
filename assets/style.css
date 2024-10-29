@@ -1,0 +1,198 @@
+/*-------------------------------------------------- Base Styling */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(./multimedia/BAAAACK.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Rubik Wet Paint", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(193, 35, 35);
+}
+
+
+
+h1 {
+    font-size: 40px;
+    padding: 0;
+    position: relative;
+}
+
+.txt {
+    font-size: 30px;
+}
+
+.script {
+    font-size: 15px;
+
+}
+
+#finalmsg {
+    font-size: 25px;
+}
+
+/*-------------------------------------------------- Header */
+header {
+    background-color: rgba(0, 0, 0, 0.872);
+    display: flex;
+    justify-content: space-between;
+   
+   
+
+}
+.info{
+    background-color: rgba(0, 0, 0, 0.404);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+
+}
+
+.botton {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    padding-right: 50px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+/*-------------------------------------------------- Sizing */
+#center img {
+    position: absolute;
+    max-width: 160px;
+    max-height: 160px;
+    z-index: 1;
+   
+}
+
+#SpaceContenair {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+   
+    min-height: 88dvh;
+    min-width: 90dvW;
+    background-color: rgba(0, 0, 0, 0.687);
+
+}
+
+#clown {
+    position: absolute;
+    transition: left 0.3s ease, top 0.3s ease, right 0.3s ease, bottom 0.3s ease;
+}
+
+#clown img {
+    width: 200px;
+    height: 250px;
+}
+
+.slidecontent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 88dvh;
+    min-width: 10dvw;
+    background-color: rgba(0, 0, 0, 0.872);
+
+}
+
+
+/*------------------------------------------------------ start/reset Button */
+#gameStart button,
+#gameEnd button {
+
+    font-family: "Rubik Wet Paint", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(82, 13, 13);
+    font-size: 30px;
+    padding: 10%;
+    animation: glitch 1s infinite;
+
+}
+
+
+
+
+.affichage {
+
+   
+    background-color: rgba(0, 0, 0, 0.031);
+   padding: 10%;
+   flex-direction: column;
+ 
+
+}
+
+
+
+/*-------------------------------------------------- Hover Effects */
+#score {
+    display: flex;
+    align-items: center;
+}
+
+#center:hover,
+#title:hover {
+    animation: shake 0.5s infinite;
+    cursor: pointer;
+}
+
+#title:hover {
+    font-size: 3em;
+    
+    animation: glitch 1s infinite;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+
+/*-------------------------------------------------- Keyframes */
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translate(-1px, -1px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translate(1px, 1px);
+    }
+}
+
+@keyframes glitch {
+
+    0%,
+    40%,
+    100% {
+        text-shadow: 1px 1px red, -1px -1px rgb(55, 88, 46);
+    }
+
+    20%,
+    60% {
+        text-shadow: -1px -1px red, 1px 1px rgb(55, 88, 46);
+    }
+}
